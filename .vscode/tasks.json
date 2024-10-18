@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile current c++ program",
+            "command": "clang++",
+            "type": "shell",
+            "args": [
+                "-O2",
+                "-DNDEBUG",
+                "${fileBasename}",
+                "-o",
+                "${fileBasenameNoExtension}.out"
+            ],
+            "group": "build"
+        },
+    ]
+}
